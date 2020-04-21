@@ -1,0 +1,534 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #EC715F;
+}
+.headbox{
+  width: 1024px;
+  height: 70px;
+  margin: 0 auto;
+}
+.headbox i{
+  display: none;
+}
+/* headerタグ内のheadlineクラスにのみ適応される */
+.headline{
+  float: left;
+  width: 200px;
+  height: 70px;
+  line-height: 70px;
+}
+.nav-list {
+  float: right;
+  line-height: 70px;
+}
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 30px;
+  color: #FAFAFA;
+  font-size: 16px;
+  font-weight: bold;
+}
+.main-visual {
+  width: 100%; /* 横幅 */
+  height: 650px; /* 高さ */
+  background-image: url(img/mv.png);
+  background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
+  background-position: center; /* 背景画像を中央に配置 */
+}
+.main-visual-content{
+  width: 40%;
+  height: 300px; /* 親の高さに揃える */
+  text-align: center; /* 文字を中央揃えにする */
+  padding-top: 200px; /* 上側の内側余白で垂直方向の位置を調整 */
+  margin: 0 auto;
+}
+.main-visual-text {
+  color: #FAFAFA; /* 文字色を白に変更 */
+  font-size: 63px;
+}
+.main-visual-name{
+  margin-top: 10px; /* 上側の外側の余白 */
+  color: #FAFAFA; /* 文字色を白に変更 */
+  font-size: 20px;
+}
+main{
+  width: 100%;
+}
+.portfolio{
+  width: 100%;
+  background-color: #ECEFF1;
+}
+.portfolio-box{
+  width: 920px;
+  padding: 90px 0;
+  margin: 0 auto;
+}
+.portfolio-head{
+  font-size: 32px;
+  color: #000000;
+  text-align: center;
+}
+.portfolio-boder{
+  background-color:#EC715F;
+  height: 3px;
+  width: 70px;
+  margin: 8px auto 0;
+}
+.portfolio-text{
+  margin: 30px auto;
+}
+.portfolio-text2{
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+}
+.portfolio-img{
+  float: left;
+  width: 300px;
+  height: 250px;
+}
+
+.portfolio-img:nth-child(1) {
+  margin: 0 10px 10px 0;
+}
+.portfolio-img:nth-child(2) {
+  margin: 0 10px 10px 0;
+}
+.portfolio-img:nth-child(3) {
+  margin-bottom: 10px;
+}
+.portfolio-img:nth-child(4) {
+  margin-right: 10px;
+}
+.portfolio-img:nth-child(5) {
+  margin-right: 10px;
+}
+.feature{
+  width: 100%;
+}
+.feature-box{
+  width: 980px;
+  padding: 90px 0;
+  margin: 0 auto;
+}
+.feature-head{
+  font-size: 32px;
+  color: #000000;
+  text-align: center;
+}
+.feature-boder{
+  background-color:#EC715F;
+  height: 3px;
+  width: 70px;
+  margin: 8px auto 0;
+}
+.feature-text{
+  margin: 30px auto;
+}
+.feature-text2{
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+}
+.feature-contens{
+  width: 980px;
+}
+.strength{
+ width: 320px;
+ float: left;
+}
+.strength:nth-child(2){
+ margin: 0 10px;
+}
+.icon{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.icon i{
+  font-size: 60px;
+  margin: 0 auto;
+  color: black;
+}
+.strength-title{
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  margin: 10px 0;
+}
+.strength-text{
+  font-size: 16px;
+  color: #000000;
+}
+.profile{
+  width: 100%;
+  background-color: #ECEFF1;
+}
+.profile-box{
+  width: 1024px;
+  padding: 90px 0;
+  margin: 0 auto;
+}
+.profile-head{
+  font-size: 32px;
+  color: #000000;
+  text-align: center;
+}
+.profile-boder{
+  background-color:#EC715F;
+  height: 3px;
+  width: 70px;
+  margin: 8px auto 0;
+}
+.profile-text{
+  margin: 30px auto;
+}
+.profile-text2{
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+}
+.profile-contens{
+  width: 1024px;
+}
+.profile-images{
+  width: 512px;
+  float: left;
+}
+.profile-img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.profile-text3{
+  float: left;
+  width: 512px;
+}
+.my-name{
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+.profile-text4{
+  font-size: 16px;
+  color: #000000;
+}
+.my-skills{
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+.profile-text5{
+  font-size: 16px;
+  color: #000000;
+  margin-top: 5px;
+}
+.contact{
+  width: 100%;
+}
+.contact-box{
+  width: 800px;
+  padding: 90px 0;
+  margin: 0 auto;
+}
+.contact-head{
+  font-size: 32px;
+  color: #000000;
+  text-align: center;
+}
+.contact-boder{
+  background-color:#EC715F;
+  height: 3px;
+  width: 70px;
+  margin: 8px auto 0;
+}
+.contact-text{
+  margin: 30px auto;
+}
+.contact-text2{
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+}
+.contact-contens{
+  width: 800px;
+}
+.contact-text3{
+   float: left;
+  width: 400px;
+}
+.contact-text8{
+  margin: 0 auto;
+  width: 200px;
+}
+.mail{
+   font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.contact-text4{
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.tel{
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.contact-text5{
+  font-size: 16px;
+  color: #000000;
+}
+.contact-text6{
+  float: left;
+  width: 400px;
+}
+.contact-text7{
+  margin: 0 auto;
+  width: 250px;
+}
+.sns{
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+.contact-text7 i{
+  color: black;
+  font-size: 50px;
+  margin: 10px;
+}
+.footer{
+  width: 100%;
+  height: 60px;
+  background-color: #EC715F
+}
+.footer-text{
+  color: #FAFAFA;
+  font-size: 16px;
+  font-weight: bold;
+  text-align:center;
+  line-height: 60px;
+}
+@media screen and (max-width:768px) {
+header {
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+}
+.headbox{
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+}
+/* headerタグ内のheadlineクラスにのみ適応される */
+.headline{
+  float: left;
+  width: 20%;
+  height: 50px;
+  line-height: 50px;
+}
+.nav-list {
+  display: none;
+}
+.nav-list-item {
+  display: none;
+}
+.headbox i{
+  float: right;
+  font-size: 30px;
+  line-height: 50px;
+  color: white;
+}
+.main-visual {
+  width: 90%; /* 横幅 */
+  height: 650px; /* 高さ */
+  background-image: url(img/code.png);
+  background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
+  background-position: center; /* 背景画像を中央に配置 */
+  margin: 0 auto;
+}
+.main-visual-content{
+  width: 90%;
+  height: 650px; /* 親の高さに揃える */
+  text-align: center; /* 文字を中央揃えにする */
+  padding-top: 200px; /* 上側の内側余白で垂直方向の位置を調整 */
+  margin: 0 auto;
+}
+.main-visual-text {
+  color: #FAFAFA; /* 文字色を白に変更 */
+  font-size: 40px;
+}
+.main-visual-name{
+  margin-top: 10px; /* 上側の外側の余白 */
+  color: #FAFAFA; /* 文字色を白に変更 */
+  font-size: 18px;
+}
+main{
+  width: 100%;
+  margin: 0 auto;
+}
+.portfolio{
+  width: 90%;
+  background-color: #ECEFF1;
+  margin: 0 auto;
+}
+.portfolio-box{
+  width: 90%;
+  padding: 90px 0;
+  margin: 0 auto;
+}
+.portfolio-img{
+  float: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.portfolio-img:nth-child(odd) {
+  display: none;
+}
+.portfolio-img:nth-child(4) {
+  margin: 10px auto;
+}
+.portfolio-img:nth-child(2) {
+  display: block;
+  margin: 0 auto;
+}
+.feature{
+  width: 90%;
+  margin: 0 auto;
+}
+.feature-box{
+  width: 90%;
+  padding: 90px 0;
+  margin: 0 auto;
+}
+.feature-contens{
+  width: 90%;
+  margin: 0 auto;
+}
+.strength{
+ float: none;
+ width: 90%;
+ margin: 0 auto;
+}
+.strength:nth-child(2){
+ margin: 10px auto;
+}
+.strength-text{
+text-align: center;
+}
+.profile{
+  width: 90%;
+  margin: 0 auto;
+}
+.profile-box{
+  width: 90%;
+  margin: 0 auto;
+  padding: 90px 0;
+}
+.profile-contens{
+  width: 90%;
+  margin: 0 auto;
+}
+.profile-images{
+  width: 90%;
+  margin: 0 auto;
+  float: none;
+}
+.profile-text3{
+  float: none;
+  width: 90%;
+  margin: 0 auto;
+}
+.my-name{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.profile-text4{
+  text-align: center;
+}
+.my-skills{
+  margin-top: 20px;
+  text-align: center;
+}
+.profile-text5{
+  text-align: center;
+}
+.contact{
+  width: 90%;
+  margin: 0 auto;
+}
+.contact-box{
+  width: 90%;
+  padding: 90px 0;
+  margin: 0 auto;
+}
+.contact-contens{
+  width: 90%;
+  margin: 0 auto;
+}
+.contact-text3{
+  float: none;
+  width: 90%;
+  margin: 0 auto;
+}
+.contact-text5{
+  margin-bottom: 5px;
+  text-align: center;
+}
+.mail{
+  text-align: center;
+}
+.contact-text4{
+  text-align: center;
+}
+.tel{
+  text-align: center;
+}
+.contact-text6{
+  float: none;
+  width: 90%;
+  margin: 0 auto;
+}
+.contact-text7{
+  margin: 0 auto;
+}
+.sns{
+   margin-top: 20px;
+   margin-bottom: 5px;
+   text-align: center;
+}
+.contact-text9{
+  margin: 0 auto;
+  width: 80%;
+}
+.contact-text9 i{
+  margin: 8px;
+}
+.footer{
+  width: 90%;
+  margin: 0 auto;
+}
